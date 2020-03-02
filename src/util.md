@@ -16,7 +16,7 @@ function isObj(o) {
     return Object.prototype.toString.call(o) === '[object Object]';
 }
 
-function getObj(0) {
+function getObj(o) {
   return Object.prototype.toString.call(o) === '[object Object]' ? 0 : {};
 }
 
