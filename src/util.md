@@ -8,7 +8,7 @@ function isArr(o) {
 }
 
 function getArr(o) {
-  return Object.prototype.toString.call(o) === '[object Array]' ? 0 : [];
+  return Object.prototype.toString.call(o) === '[object Array]' ? o : [];
 }
 
 // 判断Object
@@ -17,7 +17,7 @@ function isObj(o) {
 }
 
 function getObj(o) {
-  return Object.prototype.toString.call(o) === '[object Object]' ? 0 : {};
+  return Object.prototype.toString.call(o) === '[object Object]' ? o : {};
 }
 
 // 判断Function
