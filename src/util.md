@@ -25,7 +25,7 @@ const isRegExp = isType<RegExp>('RegExp');
 ```js
 function isType(type) {
   return function (obj) {
-    obj != null && (Array.isArray(type) ? type : [type]).some(
+    return obj != null && (Array.isArray(type) ? type : [type]).some(
       t => Object.prototype.toString.call(obj) === `[object ${t}]`
     )
   }
@@ -34,6 +34,11 @@ function isType(type) {
 const isArr = Array.isArray;
 const isObj = isType('Object');
 const isRegExp = isType('RegExp');
+const isFn = isType([
+  'Function',
+  'AsyncFunction',
+  'GeneratorFunction'
+]);
 ```
 
 ### ES3
