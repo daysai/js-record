@@ -1,6 +1,7 @@
-## 永远不要相信别人的代码
+# 永远不要相信别人的代码
 
-### TS
+## TS
+
 ```js
 const isType = <T>(type: string | string[]) => (obj: unknown): obj is T =>
   obj != null &&
@@ -21,7 +22,8 @@ const isObj = (val: unknown): val is object => typeof val === 'object';
 const isRegExp = isType<RegExp>('RegExp');
 ```
 
-### JS
+## JS
+
 ```js
 function isType(type) {
   return function (obj) {
@@ -41,7 +43,8 @@ const isFn = isType([
 ]);
 ```
 
-### ES3
+## ES3
+
 ```js
 // 判断Array
 function isArr(o) {
@@ -68,6 +71,7 @@ function isFun(o) {
 ```
 
 ### ES5+
+
 ```js
 // 判断Array
 Array.isArray(o)

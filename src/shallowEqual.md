@@ -1,6 +1,7 @@
-## shallowEqual
+# shallowEqual
 
 `is` 存在的目的，处理疏漏情况：
+
 ```js
 +0 === -0 // true，但我们期待它返回false
 NaN === NaN // false，我们期待它返回true

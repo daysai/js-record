@@ -1,4 +1,4 @@
-## JS一句话实现ES6类似的模板
+# JS一句话实现ES6类似的模板
 
 ```js
 function template(str, obj) {
