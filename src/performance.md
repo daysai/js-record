@@ -2,7 +2,7 @@
 
 ## window.performance
 
-```json
+```js
 {
   // 同一个浏览器上一个页面卸载 (unload) 结束时的时间戳。如果没有上一个页面，这个值会和 fetchStart 相同。
   navigationStart: 1543806782096,
